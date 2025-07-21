@@ -32,7 +32,7 @@
     </header>
 
     <script>
-        document.addEventLinister('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function() {
             const avatarElement = document.querySelector('#avatar');
             const nameElement = document.querySelector('#name');
             const usernameElement = document.querySelector('#username');
@@ -41,7 +41,7 @@
             const followingElement = document.querySelector('#following');
             const linkElement = document.querySelector('#link');
 
-            fetch('https://api.github.com/users/ogiansouza')
+            fetch('https://api.github.com/users/Michel07062007')
                 .then(function(res) {
                     return res.json();
                 })
